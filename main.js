@@ -1,21 +1,22 @@
+
+const usernameEl = document.getElementById('username')
+const kmEl = document.getElementById('km')
+const etàEl = document.getElementById('età')
+
+
+
+
+
 // numero di chilometri che vuole percorrere l'utente
 const kmPercorribili = Number(("inserire il numero di km da percorrere , 10,15,20 ecc.."));
 console.log(kmPercorribili);
-
-
-
 // età dell'utente
 const etaDelPasseggero = Number(("inserire l'età del passeggero")); 
 console.log(etaDelPasseggero);
-
-
 // prezzo totale del viaggio
-
 let prezzoBiglietto = kmPercorribili * 0.21;
 console.log(prezzoBiglietto);
 
-
-        
  if (etaDelPasseggero < 18) {
     const sconto = (prezzoBiglietto * 20) / 100;
     console.log(sconto);
